@@ -10,9 +10,7 @@
 
 body {
     background-color: #810CA8;
-    background-image: linear-gradient(#2D033B, #810CA8);
-    background-size: cover;
-
+    background: -webkit-gradient(linear, left top, left bottom, from(#2D033B), to(#810CA8)) fixed;;
 }
 
 textarea:focus, input:focus {
@@ -31,11 +29,6 @@ a:hover {
 h1 {
     color: #2D033B;
     font-size: 1.5rem;
-}
-
-.container {
-    width: 100vw;
-    height: 100vh;
 }
 
 /* BOX LOGIN */
