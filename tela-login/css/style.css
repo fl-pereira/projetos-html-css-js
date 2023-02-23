@@ -131,6 +131,7 @@ label, input {
     background-color: #4C8BF5;
 }
 
+/* MEDIA QUERY */
 @media (min-width: 360px) and (max-width: 768px) and (orientation: portrait) {
 
     /* GENERAL */
@@ -199,7 +200,7 @@ label, input {
         border-radius: 5px;
         color: #301E67;
         font-size: 1rem;
-        border: 2px solid #FFF;
+        border-bottom: 2px solid #810CA8;
         -webkit-transition: border 200ms ease-out;
         -moz-transition: border 200ms ease-out;
         -o-transition: border 200ms ease-out;
