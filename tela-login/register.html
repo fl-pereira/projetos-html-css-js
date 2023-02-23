@@ -24,14 +24,19 @@
             <input type="email" name="email" id="email" placeholder="mail@mail.com" autocomplete="off" class="input-form-login">
             <label for="passworod">Password</label>
             <input type="password" name="password" id="password" placeholder="Min 8 characters" class="input-form-login">
-            <a href="" id="forgot-pass">Forgot your password?</a>
-            <input type="submit" value="Login" id="btn-submit">
+            <a href="" id="forgot-pass">Forgot your password?</a>          
+            <label for="agreement" class="agreement checkboxes" id="agreement-label">
+                <input type="checkbox" name="agreement" id="agreement" class="checkboxes">I have read the <a href="#" class="agreement">terms and conditions</a> and accept them
+            </label>
+            <!-- SUBMIT -->
+            <input type="submit" value="Register" id="btn-submit">
         </form>
         <div id="footer-login">
             <p>Already have a account?</p>
             <a href="login.html">Login</a> here
         </div>    
     </div>
+    <p class="error-validation template"></p>
     <script src="js/script.js"></script>
 </body>
 </html>

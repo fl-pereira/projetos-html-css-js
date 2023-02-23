@@ -42,6 +42,7 @@ h1 {
     margin-top: 10vh;
     text-align: center;
     border-radius: 15px;
+    box-shadow: 10px 10px 2px #2D033B;
 }
 
 /* FORM */
@@ -56,6 +57,14 @@ label, input {
     width: 100%;
     text-align: left;
 }
+
+.checkboxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    word-wrap: break-word;
+  }
 
 .input-form-login {
     height: 40px;
@@ -89,13 +98,18 @@ label, input {
     font-size: 1rem;
     background-color: #C147E9;
     color: #FFF;
-    margin: 35px 0px;
+    margin: 25px 0px;
     cursor: pointer;
 }
 
 #btn-submit:hover {
     background-color: #810CA8;
     transition: 500ms;
+}
+
+a, label.agreement {
+    font-size: .7rem;
+    display: inline;
 }
 
 /* SOCIALS */
