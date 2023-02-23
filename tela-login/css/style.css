@@ -130,3 +130,139 @@ label, input {
 .go:hover {
     background-color: #4C8BF5;
 }
+
+@media (min-width: 360px) and (max-width: 768px) and (orientation: portrait) {
+
+    /* GENERAL */
+
+    * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        border: none;
+    }
+
+    body {
+        background-color: #810CA8;
+        background: -webkit-gradient(linear, left top, left bottom, from(#2D033B), to(#810CA8)) fixed;;
+    }
+
+    textarea:focus, input:focus {
+        outline: none;
+    }
+
+    a, label {
+        font-size: .9rem;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #301E67;
+    }
+
+    h1 {
+        color: #2D033B;
+        font-size: 1.5rem;
+    }
+
+    /* BOX LOGIN */
+
+    #box-login {
+        background-color: #FFF;
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px 35px;
+        margin-top: 10vh;
+        text-align: center;
+        border-radius: 15px;
+    }
+
+    /* FORM */
+
+    form {
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+
+    label, input {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    .input-form-login {
+        height: 40px;
+        padding: 5px 10px;
+        margin: 5px 0px;
+        border-radius: 5px;
+        color: #301E67;
+        font-size: 1rem;
+        border: 2px solid #FFF;
+        -webkit-transition: border 200ms ease-out;
+        -moz-transition: border 200ms ease-out;
+        -o-transition: border 200ms ease-out;
+        transition: border 200ms ease-out;
+    }
+
+    .input-form-login:focus {
+        border: 2px solid #810CA8;
+    }
+
+    #forgot-pass {
+        display: block;
+        text-align: right;
+    }
+
+    #btn-submit {
+        border-radius: 15px;
+        border: none;
+        height: 40px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+        background-color: #C147E9;
+        color: #FFF;
+        margin: 35px 0px;
+        cursor: pointer;
+    }
+
+    #btn-submit:hover {
+        background-color: #810CA8;
+        transition: 500ms;
+    }
+
+    /* SOCIALS */
+
+    .social-container{
+        margin-bottom: 10px;
+    }
+
+    .social-container p{
+        margin-bottom: 10px;
+    }
+
+    .social-container i {
+        height: 40px;
+        width: 40px;
+        color: #FFF;
+        border-radius: 50%;
+        line-height: 40px;
+        cursor: pointer;
+        margin: 3px;
+        background-color: #999;
+    }
+
+    .fb:hover {
+        background-color: #4267B2;
+    }
+
+    .in:hover {
+        background-color: #0077B5;
+    }
+
+    .go:hover {
+        background-color: #4C8BF5;
+    }
+}
