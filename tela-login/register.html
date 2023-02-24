@@ -30,8 +30,12 @@
                     <input type="email" name="email" id="email" placeholder="mail@mail.com" autocomplete="off" class="input-form" data-valid-mail data-required>
                 </div>  
                 <div class="divToValidate">
-                    <label for="passworod">Password</label>
-                    <input type="password" name="password" id="password" placeholder="Min 8 characters" class="input-form" required>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Min 8 char, 1 uppercase and 1 special char" class="input-form" data-min-length="8" data-required>
+                </div>
+                <div class="divToValidate">
+                    <label for="password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password" class="input-form" data-min-length="8" data-required data-equal-password="password">
                 </div>
                 <!-- SUBMIT -->
                 <input type="submit" value="Register" id="btn-submit">

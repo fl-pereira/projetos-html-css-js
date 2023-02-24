@@ -3,7 +3,8 @@ class Validator {
         this.validations = [
             'data-required',
             'data-min-length',
-            'data-valid-mail'     
+            'data-valid-mail',
+            'data-equal-password'     
         ]
     }
 
@@ -30,6 +31,16 @@ class Validator {
         }, this);
     }
 
+    //COMPARE VALUES 
+    equalpassword(input, inputName) {
+        let inputToCompare = document.getElementsByName(inputName)[0];
+        let errorMessage = 'The passwords are not equals';
+
+        if(input.value != inputToCompare.value) {
+            this.printMessage(input, errorMessage);
+        }
+    }
+
     // MIN CHARACTERS VALIDATION
     minlength(input, minValue) {
 
@@ -53,6 +64,7 @@ class Validator {
         }
     }
 
+    // REQUIRED FIELDS
     required(input){
         let inputValue = input.value;
 
