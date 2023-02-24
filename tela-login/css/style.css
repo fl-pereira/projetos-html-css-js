@@ -58,29 +58,21 @@ label, input {
     text-align: left;
 }
 
-.checkboxes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    word-wrap: break-word;
-  }
-
-.input-form-login {
+.input-form {
     height: 40px;
     padding: 5px 10px;
-    margin: 5px 0px;
+    margin: 0px 0px 20px 0px;
     border-radius: 5px;
     color: #301E67;
     font-size: 1rem;
-    border: 2px solid #FFF;
+    border: 2px solid #fff;
     -webkit-transition: border 200ms ease-out;
     -moz-transition: border 200ms ease-out;
     -o-transition: border 200ms ease-out;
     transition: border 200ms ease-out;
 }
 
-.input-form-login:focus {
+.input-form:focus {
     border: 2px solid #810CA8;
 }
 
@@ -112,13 +104,25 @@ a, label.agreement {
     display: inline;
 }
 
+/* VALIDATIONS */
+.error-validation {
+    color: #f00;
+    position: absolute;
+    margin-top: -15px;
+    font-size: .6rem;
+}
+
+.template {
+    display: none;
+}
+
 /* SOCIALS */
 
 .social-container{
     margin-bottom: 10px;
 }
 
-.social-container p{
+div.social-container p{
     margin-bottom: 10px;
 }
 
@@ -145,6 +149,11 @@ a, label.agreement {
     background-color: #4C8BF5;
 }
 
+.footer-box {
+    margin: 15px 0px 0px 0px;
+    font-size: .7rem;
+}
+
 /* MEDIA QUERY */
 @media (min-width: 360px) and (max-width: 768px) and (orientation: portrait) {
 
@@ -167,7 +176,7 @@ a, label.agreement {
         outline: none;
     }
 
-    a, label {
+    a, label, input {
         font-size: .9rem;
         text-decoration: none;
     }
@@ -207,22 +216,27 @@ a, label.agreement {
         text-align: left;
     }
 
-    .input-form-login {
+    .input-form {
         height: 40px;
         padding: 5px 10px;
-        margin: 5px 0px;
+        margin: 0px 0px 20px 0px;
         border-radius: 5px;
         color: #301E67;
         font-size: 1rem;
-        border-bottom: 2px solid #810CA8;
+        border: 2px solid #fff;
         -webkit-transition: border 200ms ease-out;
         -moz-transition: border 200ms ease-out;
         -o-transition: border 200ms ease-out;
         transition: border 200ms ease-out;
     }
-
-    .input-form-login:focus {
+    
+    .input-form:focus {
         border: 2px solid #810CA8;
+    }
+    
+    .input-form:hover {
+        border: 2px solid #333;
+
     }
 
     #forgot-pass {
