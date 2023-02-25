@@ -54,15 +54,11 @@ class Validator {
             } else if(!isNaN(parseInt(charArray[i]))) {
                 numCount++;                
             }
+        }
 
-            console.log('Special chars: ' + specCharCount);
-            console.log('Uppercase: ' + upperCount);
-            console.log('Numbers: ' + numCount);
-
-            if(upperCount === 0 || numCount === 0 || specCharCount === 0) {
-                let errorMessage = "Password does not meet the requirements";
-                this.printMessage(input, errorMessage);
-            }
+        if(upperCount === 0 || numCount === 0 || specCharCount === 0) {
+            let errorMessage = "Password does not meet the requirements";
+            this.printMessage(input, errorMessage);
         }
     }
 
