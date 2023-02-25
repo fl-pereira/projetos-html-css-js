@@ -64,7 +64,7 @@ label, input {
     margin: 0px 0px 20px 0px;
     border-radius: 5px;
     color: #301E67;
-    font-size: 1rem;
+    font-size: .9rem;
     border: 2px solid #fff;
     -webkit-transition: border 200ms ease-out;
     -moz-transition: border 200ms ease-out;
