@@ -41,8 +41,6 @@ class Validator {
         let specCharCount = 0
         let specChars = ['!','@','#', '$','%','&','*','(',')',];
 
-        console.log(charArray);        
-
         for(let i = 0; charArray.length > i; i++)  {
             for(let j = 0; j < charArray.length; j++){
                 if(charArray[i] === specChars[j]) {
