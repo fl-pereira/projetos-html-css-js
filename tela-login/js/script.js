@@ -4,7 +4,8 @@ class Validator {
             'data-required',
             'data-min-length',
             'data-valid-mail',
-            'data-equal-password'     
+            'data-equal-password',
+            'data-password-validate',     
         ]
     }
 
@@ -31,7 +32,37 @@ class Validator {
         }, this);
     }
 
-    //COMPARE VALUES 
+    // PASSWORD VALIDATION
+    passwordvalidate(input) {
+        let charArray = input.value.split("");
+
+        let upperCount = 0;
+        let numCount = 0;
+        let specCharCount = 0
+        let specChars = ['!','@','#', '$','%','&','*','(',')',];
+
+        console.log(charArray);        
+
+        for(let i = 0; charArray.length > i; i++)  {
+            for(let j = 0; j < charArray.length; j++){
+                if(charArray[i] === specChars[j]) {
+                   specCharCount++;                   
+                }
+            }
+            if(charArray[i] === charArray[i].toUpperCase() && isNaN(parseInt(charArray[i]))) {
+                upperCount++;                
+            } else if(!isNaN(parseInt(charArray[i]))) {
+                numCount++;                
+            }
+        }
+
+        if(upperCount === 0 || numCount === 0 || specCharCount === 0) {
+            let errorMessage = "Password does not meet the requirements";
+            this.printMessage(input, errorMessage);
+        }
+    }
+
+    // COMPARE VALUES 
     equalpassword(input, inputName) {
         let inputToCompare = document.getElementsByName(inputName)[0];
         let errorMessage = 'The passwords are not equals';
@@ -95,7 +126,6 @@ class Validator {
     }
 
 }
-
 
 let form = document.getElementById("reg-form");
 let submit = document.getElementById("btn-submit");
