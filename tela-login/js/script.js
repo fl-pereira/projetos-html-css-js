@@ -5,7 +5,7 @@ class Validator {
             'data-min-length',
             'data-valid-mail',
             'data-equal-password',
-            'data-password-validate',     
+            'data-password-validate'     
         ]
     }
 
