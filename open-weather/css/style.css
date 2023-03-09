@@ -1,0 +1,105 @@
+/* GENERAL */
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+}
+
+body {
+    background-color: #810CA8;
+    background: -webkit-gradient(linear, left top, left bottom, from(#2D033B), to(#810CA8)) fixed;;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, label {
+    font-size: .9rem;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #301E67;
+}
+
+h1 {
+    color: #2D033B;
+    font-size: 1.5rem;
+}
+
+/* BOX LOGIN */
+
+#container {
+    background-color: #FFF;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px 35px;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 10px 10px 2px #2D033B;
+}
+
+/* FORM */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.input-form {
+    height: 40px;
+    padding: 5px 10px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 5px;
+    color: #301E67;
+    font-size: .9rem;
+    border: 2px solid #fff;
+    -webkit-transition: border 200ms ease-out;
+    -moz-transition: border 200ms ease-out;
+    -o-transition: border 200ms ease-out;
+    transition: border 200ms ease-out;
+}
+
+.input-form:focus {
+    border: 2px solid #810CA8;
+}
+
+#forgot-pass {
+    display: block;
+    text-align: right;
+}
+
+#btn-submit {
+    border-radius: 15px;
+    border: none;
+    height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    background-color: #C147E9;
+    color: #FFF;
+    margin: 25px 0px;
+    cursor: pointer;
+}
+
+#btn-submit:hover {
+    background-color: #810CA8;
+    transition: 500ms;
+}
+
+/* MEDIA QUERY */
+@media (min-width: 360px) and (max-width: 768px) and (orientation: portrait) {
+
+}
